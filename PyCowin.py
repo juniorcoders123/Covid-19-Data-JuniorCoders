@@ -6,7 +6,7 @@ import base64
 from fake_useragent import UserAgent
 
 ua = UserAgent()
-header = {'User-Agent': 'Mozilla/5.0'
+header = {'User-Agent': 'Mozilla/5.0',
          'referer': 'https://...'}
 state_response = requests.get(f"https://cdn-api.co-vin.in/api/v2/admin/location/states",headers=header)
 states = state_response.json()
